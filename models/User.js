@@ -15,7 +15,7 @@ const userSchema = new Schema(
       required: true,
       trim: true,
       unique: true,
-      match: [`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`, 'must be valid']
+      match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, 'must be valid']
     },
     thoughts: [
       {
